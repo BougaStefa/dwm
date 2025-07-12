@@ -1,5 +1,6 @@
 *.orig
 *.rej
+.diff
 patches
 util.o
 dwm
