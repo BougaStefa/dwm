@@ -15,7 +15,7 @@ static const char col_bg[]          = "#111111";
 static const char col_gray1[]       = "#111111";
 static const char col_gray2[]       = "#373737";
 static const char col_gray3[]       = "#ddc7a1";
-static const char col_gray4[]       = "#ddc7a1";
+static const char col_gray4[]       = "#fbf1c7";
 static const char col_cyan[]        = "#ddc7a1"; // NOT cyan, arsed changing in case of future patches
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
