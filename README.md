@@ -9,6 +9,7 @@ My fork of [DWM](https://dwm.suckless.org/), with my patches and configurations.
 - [titlecolor](https://dwm.suckless.org/patches/titlecolor/) - dwm-titlecolor-20210815-ed3ab6b4.diff
 - [statuspadding](https://dwm.suckless.org/patches/statuspadding/) - dwm-statuspadding-6.3.diff
 - [restartsig](https://dwm.suckless.org/patches/restartsig/) - dwm-restartsig-20180523-6.2.diff 
+- [restoreafterrestart](https://dwm.suckless.org/patches/restoreafterrestart/) - dwm-restoreafterrestart-20220709-d3f93c7.diff 
 
 # Other Changes
 
