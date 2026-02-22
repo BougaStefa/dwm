@@ -91,7 +91,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_q,      killclient,     {0} }, /* quit window */
 	{ MODKEY|ShiftMask,             XK_q,      killclient,     {.ui = 1} }, /* quit all except current */
 	{ MODKEY|ShiftMask,             XK_BackSpace, quit,        {0} }, /* quit dwm */
-	{ MODKEY|ShiftMask|ControlMask, XK_r,         quit,        {1} }, /* refresh dwm */
+	{ MODKEY|ControlMask|ShiftMask, XK_r,         quit,        {1} }, /* refresh dwm */
 
 
 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
