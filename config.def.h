@@ -1,21 +1,23 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 1;        /* border pixel of windows */
-static const unsigned int snap      = 32;       /* snap pixel */
+static const unsigned int borderpx  = 0;        /* border pixel of windows */
+static const unsigned int snap      = 22;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "JetBrains Mono Nerd Font" };
-static const char dmenufont[]       = "JetBrains Mono Nerd Font";
-static const char col_gray1[]       = "#222222";
-static const char col_gray2[]       = "#444444";
-static const char col_gray3[]       = "#bbbbbb";
-static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#005577";
+static const char *fonts[]          = { "JetBrainsMono Nerd Font:size=10" };
+static const char dmenufont[]       = "JetBrainsMono Nerd Font:size=10";
+static const char col_bg[]          = "#111111";
+static const char col_gray1[]       = "#111111";
+static const char col_gray2[]       = "#373737";
+static const char col_gray3[]       = "#ddc7a1";
+static const char col_gray4[]       = "#ddc7a1";
+static const char col_cyan[]        = "#ddc7a1"; // NOT cyan, arsed changing in case of future patches
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+	[SchemeNorm] = { "#928374", col_bg, "#2c2c2c" },
+	[SchemeSel]  = { "#fbf1c7", "#111111", "#404040" },
+    [SchemeTitle]= { "#fbf1c7", col_bg, col_cyan  },
 };
 
 /* tagging */
@@ -87,7 +89,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_q,      killclient,     {0} }, /* quit window */
 	{ MODKEY|ShiftMask,             XK_q,      killclient,     {.ui = 1} }, /* quit all except current */
 	{ MODKEY|ShiftMask,             XK_BackSpace, quit,        {0} }, /* quit dwm */
-	{ MODKEY|ControlMask|ShiftMask, XK_q,         quit,        {1} }, /* refresh dwm */
+	{ MODKEY|ShiftMask|ControlMask, XK_r,         quit,        {1} }, /* refresh dwm */
 
 
 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
