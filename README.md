@@ -13,6 +13,7 @@ My fork of [DWM](https://dwm.suckless.org/), with my patches and configurations.
 - [hide vacat tags](https://dwm.suckless.org/patches/hide_vacant_tags/) - dwm-hide_vacant_tags-6.4.diff 
 - [focusfullscreen](https://dwm.suckless.org/patches/focusfullscreen/) - dwm-focusfullscreen-20211121-95e7342.diff
 - [vanitygaps](https://dwm.suckless.org/patches/vanitygaps/) - dwm-vanitygaps-20190508-6.2.diff
+- [center](https://dwm.suckless.org/patches/center/) - dwm-center-6.2.diff
 
 # Other Changes
 
