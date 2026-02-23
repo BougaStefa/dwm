@@ -135,6 +135,10 @@ static const Key keys[] = {
     /* Application bindings */
     { MODKEY,                       XK_w,      spawn,          {.v = (const char*[]){ BROWSER, NULL } } },
 
+    /* Screenshots */
+    { MODKEY,                       XK_Print,  spawn,          SHCMD("screenshot") },
+    { MODKEY|ShiftMask,             XK_Print,  spawn,          SHCMD("screenshot full") },
+
     // Vanity Gaps
 	{ MODKEY|Mod1Mask,              XK_h,      incrgaps,       {.i = +1 } },
 	{ MODKEY|Mod1Mask,              XK_l,      incrgaps,       {.i = -1 } },
@@ -165,6 +169,8 @@ static const Button buttons[] = {
 	{ ClkStatusText,        0,              Button1,        sigstatusbar,   {.i = 1} },
 	{ ClkStatusText,        0,              Button2,        sigstatusbar,   {.i = 2} },
 	{ ClkStatusText,        0,              Button3,        sigstatusbar,   {.i = 3} },
+	{ ClkStatusText,        0,              Button4,        sigstatusbar,   {.i = 4} },
+	{ ClkStatusText,        0,              Button5,        sigstatusbar,   {.i = 5} },
 	{ ClkClientWin,         MODKEY,         Button1,        movemouse,      {0} },
 	{ ClkClientWin,         MODKEY,         Button2,        togglefloating, {0} },
 	{ ClkClientWin,         MODKEY,         Button3,        resizemouse,    {0} },
