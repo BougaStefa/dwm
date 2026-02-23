@@ -38,9 +38,9 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     iscentered    isfloating   monitor */
-	{ "st",       NULL,       NULL,       1 << 0,       0,            0,           -1 },
-	{ "zen",      NULL,       NULL,       1 << 1,       0,            0,           -1 },
-	{ "discord",  NULL,       NULL,       1 << 2,       0,            0,            1 },
+	{ "st",       NULL,       NULL,       0,            0,            0,           -1 },
+	{ "zen",      NULL,       NULL,       0,            0,            0,           -1 },
+	{ "discord",  NULL,       NULL,       0,            0,            0,            1 },
     { NULL,       NULL,       "pulsemixer",0,           1,            1,           -1 },
 };
 
