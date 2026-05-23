@@ -39,9 +39,9 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     iscentered    isfloating   monitor */
 	{ "st",       NULL,       NULL,       0,            0,            0,           -1 },
-	{ "zen",      NULL,       NULL,       0,            0,            0,           -1 },
+	{ "Helium",   NULL,       NULL,       1 << 1,       0,            0,           -1 },
 	{ "discord",  NULL,       NULL,       0,            0,            0,            1 },
-    { NULL,       NULL,       "pulsemixer",0,           1,            1,           -1 },
+  { NULL,       NULL,       "pulsemixer",0,           1,            1,           -1 },
 };
 
 /* layout(s) */
@@ -69,7 +69,7 @@ static const Layout layouts[] = {
 /* helper for spawning shell commands in the pre dwm-5.0 fashion */
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
-#define BROWSER "zen-browser"
+#define BROWSER "helium-browser"
 
 #define STATUSBAR "dwmblocks"
 
