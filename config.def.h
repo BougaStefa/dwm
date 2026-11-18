@@ -121,10 +121,10 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 
-    /* Volume controls */
-    { 0, XF86XK_AudioMute,        spawn, SHCMD("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle") },
-    { 0, XF86XK_AudioRaiseVolume, spawn, SHCMD("wpctl set-volume @DEFAULT_AUDIO_SINK@ 3%+") },
-    { 0, XF86XK_AudioLowerVolume, spawn, SHCMD("wpctl set-volume @DEFAULT_AUDIO_SINK@ 3%-") }, 
+    /* Volume controls; signal dwmblocks' volume block (signal 10) to refresh */
+    { 0, XF86XK_AudioMute,        spawn, SHCMD("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle; pkill -RTMIN+10 -x dwmblocks") },
+    { 0, XF86XK_AudioRaiseVolume, spawn, SHCMD("wpctl set-volume @DEFAULT_AUDIO_SINK@ 3%+; pkill -RTMIN+10 -x dwmblocks") },
+    { 0, XF86XK_AudioLowerVolume, spawn, SHCMD("wpctl set-volume @DEFAULT_AUDIO_SINK@ 3%-; pkill -RTMIN+10 -x dwmblocks") },
 
     /* Mic mute and brightness (ThinkPad F4-F6) */
     { 0, XF86XK_AudioMicMute,      spawn, SHCMD("micmute") },
