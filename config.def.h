@@ -128,7 +128,7 @@ static const Key keys[] = {
     { 0, XF86XK_AudioLowerVolume, spawn, SHCMD("wpctl set-volume @DEFAULT_AUDIO_SINK@ 3%-; pkill -RTMIN+10 -x dwmblocks") },
 
     /* Mic mute and brightness (ThinkPad F4-F6) */
-    { 0, XF86XK_AudioMicMute,      spawn, SHCMD("micmute") },
+    { 0, XF86XK_AudioMicMute,      spawn, SHCMD("micmute; pkill -RTMIN+10 -x dwmblocks") },
     { 0, XF86XK_MonBrightnessUp,   spawn, SHCMD("brightnessctl -q set 5%+") },
     { 0, XF86XK_MonBrightnessDown, spawn, SHCMD("brightnessctl -q set 5%-") },
 
