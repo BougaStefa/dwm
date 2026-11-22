@@ -44,6 +44,7 @@ static const Rule rules[] = {
   { NULL,       NULL,       "pulsemixer",0,           1,            1,           -1 },
   { NULL,       NULL,       "impala",    0,           1,            1,           -1 },
   { NULL,       NULL,       "btop",      0,           1,            1,           -1 },
+  { NULL,       NULL,       "bluetui",   0,           1,            1,           -1 },
 };
 
 /* layout(s) */
