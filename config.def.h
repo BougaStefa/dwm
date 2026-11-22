@@ -42,6 +42,7 @@ static const Rule rules[] = {
 	{ "Helium",   NULL,       NULL,       1 << 1,       0,            0,           -1 },
 	{ "discord",  NULL,       NULL,       0,            0,            0,            1 },
   { NULL,       NULL,       "pulsemixer",0,           1,            1,           -1 },
+  { NULL,       NULL,       "impala",    0,           1,            1,           -1 },
 };
 
 /* layout(s) */
