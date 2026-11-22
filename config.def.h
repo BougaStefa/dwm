@@ -43,6 +43,7 @@ static const Rule rules[] = {
 	{ "discord",  NULL,       NULL,       0,            0,            0,            1 },
   { NULL,       NULL,       "pulsemixer",0,           1,            1,           -1 },
   { NULL,       NULL,       "impala",    0,           1,            1,           -1 },
+  { NULL,       NULL,       "btop",      0,           1,            1,           -1 },
 };
 
 /* layout(s) */
@@ -129,8 +130,8 @@ static const Key keys[] = {
 
     /* Mic mute and brightness (ThinkPad F4-F6) */
     { 0, XF86XK_AudioMicMute,      spawn, SHCMD("micmute; pkill -RTMIN+10 -x dwmblocks") },
-    { 0, XF86XK_MonBrightnessUp,   spawn, SHCMD("brightnessctl -q set 5%+") },
-    { 0, XF86XK_MonBrightnessDown, spawn, SHCMD("brightnessctl -q set 5%-") },
+    { 0, XF86XK_MonBrightnessUp,   spawn, SHCMD("brightnessctl -q set 5%+; pkill -RTMIN+15 -x dwmblocks") },
+    { 0, XF86XK_MonBrightnessDown, spawn, SHCMD("brightnessctl -q -n set 5%-; pkill -RTMIN+15 -x dwmblocks") },
 
     /* Media controls */
     { 0, XF86XK_AudioPrev,  spawn, SHCMD("playerctl previous") },
